@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=Rye);
+@import url(https://fonts.googleapis.com/css?family=Maiden+Orange);
+/* body {
+  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/tileable_wood_texture.png);
+}
+ */
+#game {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#content {
+  margin: 0 auto;
+  width: 750px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#header {
+  margin-bottom: 20px;
+}
+
+#greeting {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 500px;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-bottom: 20px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+ul {
+  height: 100px;
+  width: 500px;
+  margin: 0 auto 15 auto;
+  display: inline-block;
+  padding: 0px;
+  list-style-type: none;
+}
+
+li,
+li:active {
+  border: 2px solid brown;
+  margin: 0 15px 0 0;
+  width: 110px;
+  height: 110px;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  font-size: 70px;
+  position: relative;
+}
+
+#X,
+#O {
+  height: 110px;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+}
+
+#info,
+button {
+  font-family: 'Maiden Orange', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  height: auto;
+}
+
+.pics {
+  height: 26px;
+  width: 26px;
+}
+
+#scoreBoard {
+  float: right;
+  width: 100px;
+  margin: 0 0 0 30px;
+}
+
+/* dropdown */
+
+.dropdown-toggle {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border: 2px solid #dc3545;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: none !important
+}
+
+.dropdown-toggle::after {
+  display: none
+}
+
+/* radio button */
+.toption{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 10px;
+}
+.toption1{
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 10px;
+}
+
+label.radio {
+  cursor: pointer
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none
+}
+
+.form-control{
+  width: 200px;
+}
+
+label.radio span {
+  padding: 7px 14px;
+  border: 2px solid #8f37aa;
+  display: inline-block;
+  color: #8f37aa;
+  border-radius: 3px;
+  text-transform: uppercase
+}
+
+label.radio input:checked+span {
+  border-color: #8f37aa;
+  background-color: #190a6c;
+  color: #fff
+}
+
+.card{
+  background-color: transparent;
+  border: none;
+}
+
+#value-1:checked~.value-1,
+#value-2:checked~.value-2 {
+    background: #0a0365;
+    border-color: #8a0da0
+}
+
+.box label .select-dots {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease
+}
+
+#value-1:checked~.value-1 .select-dots,
+#value-2:checked~.value-2 .select-dots {
+    background: #fff
+}
+
+.box label .select-dots::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    transition: all 0.3s ease
+}
+
+#value-1:checked~.value-1 .select-dots::before,
+#value-2:checked~.value-2 .select-dots::before {
+    background: #9C27B0;
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.box label .text {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+    transition: color 0.3s ease
+}
+
+#value-1:checked~.value-1 .text,
+#value-2:checked~.value-2 .text {
+    color: #fff
+}
+
+.box input[type="radio"] {
+    display: none
+}
+
+.box label {
+  display: flex;
+  height: 53px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding-left: 11px;
+  cursor: pointer;
+  transition: all 0.3s ease
+}
+
+.card label {
+  font-size: 0.875rem;
+  line-height: 1.4rem;
+  vertical-align: top;
+  margin-bottom: .5rem
+}
